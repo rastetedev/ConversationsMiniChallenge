@@ -24,6 +24,9 @@
         <activity
             android:name=".emoji_reaction_bubble_one.EmojiReactionBubbleActivity"
             android:exported="true" />
+        <activity
+            android:name=".bottom_navigation_unread_badge_two.BottomNavigationUnreadBadgeActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

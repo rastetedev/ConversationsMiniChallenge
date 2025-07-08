@@ -1,4 +1,4 @@
-package com.raulastete.conversationsminichallenge.emoji_reaction_bubble_one
+package com.raulastete.conversationsminichallenge.bottom_navigation_unread_badge_two
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import com.raulastete.conversationsminichallenge.ui.theme.ConversationsMiniChallengeTheme
 import com.raulastete.conversationsminichallenge.ui.theme.SurfaceA30
 
-class EmojiReactionBubbleActivity : ComponentActivity() {
+class BottomNavigationUnreadBadgeActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class EmojiReactionBubbleActivity : ComponentActivity() {
         )
         setContent {
             ConversationsMiniChallengeTheme {
-                EmojiReactionBubbleScreen()
+                BottomNavigationUnreadBadgeScreen()
             }
         }
     }

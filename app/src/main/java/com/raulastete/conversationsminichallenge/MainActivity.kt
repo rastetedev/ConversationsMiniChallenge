@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.raulastete.conversationsminichallenge.bottom_navigation_unread_badge_two.BottomNavigationUnreadBadgeActivity
 import com.raulastete.conversationsminichallenge.emoji_reaction_bubble_one.EmojiReactionBubbleActivity
 import com.raulastete.conversationsminichallenge.ui.theme.ConversationsMiniChallengeTheme
 import kotlin.jvm.java
@@ -41,6 +42,22 @@ class MainActivity : ComponentActivity() {
                     }) {
                         Text(
                             "Mini challenge #1 - Emoji Reaction Bubble",
+                            textAlign = TextAlign.Center
+                        )
+                    }
+
+                    Spacer(Modifier.height(16.dp))
+
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                BottomNavigationUnreadBadgeActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text(
+                            "Mini challenge #2 - Bottom Navigation with Unread Badge",
                             textAlign = TextAlign.Center
                         )
                     }
