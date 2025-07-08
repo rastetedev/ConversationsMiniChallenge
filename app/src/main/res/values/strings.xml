@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ConversationsMiniChallenge</string>
+    <string name="message_card_body">Iʼll send the draft tonight.I spent 9 months building what I thought would be a simple app to help people learn new languages through short conversations. I poured my evenings and weekends into it, but the launch was... underwhelming.</string>
 </resources>

@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
@@ -18,6 +19,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.raulastete.conversationsminichallenge.bottom_navigation_unread_badge_two.BottomNavigationUnreadBadgeActivity
 import com.raulastete.conversationsminichallenge.emoji_reaction_bubble_one.EmojiReactionBubbleActivity
+import com.raulastete.conversationsminichallenge.message_card_three.MessageCardActivity
 import com.raulastete.conversationsminichallenge.ui.theme.ConversationsMiniChallengeTheme
 import kotlin.jvm.java
 
@@ -28,7 +30,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ConversationsMiniChallengeTheme {
                 Column(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxSize().padding(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
@@ -58,6 +60,22 @@ class MainActivity : ComponentActivity() {
                     }) {
                         Text(
                             "Mini challenge #2 - Bottom Navigation with Unread Badge",
+                            textAlign = TextAlign.Center
+                        )
+                    }
+
+                    Spacer(Modifier.height(16.dp))
+
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                MessageCardActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text(
+                            "Mini challenge #3 - Message Card",
                             textAlign = TextAlign.Center
                         )
                     }
