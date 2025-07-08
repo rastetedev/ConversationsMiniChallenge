@@ -26,6 +26,27 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ConversationsMiniChallengeTheme {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                EmojiReactionBubbleActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text(
+                            "Mini challenge #1 - Emoji Reaction Bubble",
+                            textAlign = TextAlign.Center
+                        )
+                    }
+
+                    Spacer(Modifier.height(16.dp))
+                }
             }
         }
     }

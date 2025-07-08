@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".emoji_reaction_bubble_one.EmojiReactionBubbleActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
